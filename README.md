@@ -1,8 +1,13 @@
 # CDK EventBridge Slack
 
-Creates an AWS EventBridge bus and API destination for sending messages to Slack.
+A simple CDK app which creates an AWS EventBridge bus and API destination for sending messages to Slack.
+
+The motivation behind this project is to be simple, generic solution for sending messages to Slack from AWS.
+Applications within AWS can simply send messages to a custom event bus with a payload targeting a specific Slack channel.
 
 ## Install
+
+This project requires Node v18+.
 
 ```
 npm install
@@ -56,6 +61,12 @@ In order to post messages Slack app must be added to the receiving Slack channel
 This can be achieved by typing `/add` in the respective channel.
 
 ![Dialog for adding app to channel](images/add-app-to-channel.png)
+
+## Deployment
+
+```
+npm run cdk -- deploy SlackStack
+```
 
 ## Usage
 
