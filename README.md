@@ -39,6 +39,8 @@ The `arn` of this secret must be supplied as the `botOauthTokenSecretArn` proper
 
 ## Configuration
 
+Simply instantiate and configure your `SlackStack` in `bin/cdk-eventbridge-slack.ts`.
+
 ```typescript
 new SlackStack(app, "SlackStack", {
   workspaceName: "My Workspace",
