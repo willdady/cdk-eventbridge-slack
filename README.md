@@ -2,8 +2,8 @@
 
 A simple CDK app which creates an AWS EventBridge bus and API destination for sending messages to Slack.
 
-The motivation behind this project is to be simple, generic solution for sending messages to Slack from AWS.
-Applications within AWS can simply send messages to a custom event bus with a payload targeting a specific Slack channel.
+The motivation behind this project is to be a simple, generic solution for sending messages to Slack from AWS.
+Applications within AWS can simply send messages to the custom event bus with a payload targeting a specific Slack channel.
 
 ## Install
 
@@ -54,6 +54,7 @@ For example, the above stack instance will create an event bus named `my-workspa
 
 To allow publishing to the event bus cross-account within the same AWS Organisation, set `organisationId`.
 This field is otherwise optional.
+For more information see [Sending and receiving Amazon EventBridge events between AWS accounts](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-cross-account.html).
 
 ### Enabling channels (IMPORTANT!)
 
